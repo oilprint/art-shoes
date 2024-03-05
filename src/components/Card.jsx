@@ -64,7 +64,7 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
               {title}
             </h3>
             <div className="flex justify-between flex-wrap items-center gap-1">
-              <div className=" xs:mr-2 mr-6 mb-1 font-lucky  text-accent text-[32px] ">
+              <div className=" xs:mr-2 mr-6 mb-1 font-lucky leading-[0.8] text-accent text-[32px] ">
                 <span>$</span>
                 <span>{price}</span>
               </div>
@@ -80,6 +80,12 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
           </div>
         </>
       )}
+      <Btn
+        Icon={Favorite}
+        isFavorite={isFavorited(id)}
+        onClick={onClickFavorite}
+        className="absolute top-3 right-3"
+      />
     </article>
   );
 };
