@@ -1,0 +1,173 @@
+[
+  {
+    "id": 201,
+    "title": "White Monet's Blossom",
+    "price": 120,
+    "style": "Monet",
+    "description": "Experience the tranquility of Monet's garden with these white sneakers adorned with delicate blossoms, echoing the artist's serene impressionistic touch.",
+    "category": 1,
+    "imgUrl": "/images/sneakers/6.jpg"
+  },
+  {
+    "id": 202,
+    "title": "White Dali's Surreal Stride",
+    "price": 150,
+    "style": "Dali",
+    "description": "Step into the surreal world of Dali with these black sneakers featuring eccentric designs inspired by the artist's mind-bending creations.",
+    "category": 4,
+    "imgUrl": "/images/sneakers/1.jpg"
+  },
+  {
+    "id": 203,
+    "title": "Blue Van Gogh's Starry Steps",
+    "price": 100,
+    "style": "Van Gogh",
+    "description": "Walk under the starry night sky with these blue sneakers, paying homage to Van Gogh's iconic masterpiece 'Starry Night.'",
+    "category": 2,
+    "imgUrl": "/images/sneakers/9.jpg"
+  },
+  {
+    "id": 204,
+    "title": "Red Degas' Ballet Flair",
+    "price": 80,
+    "style": "Degas",
+    "description": "Channel the elegance of ballet with these red sneakers adorned with motifs inspired by Degas' graceful dancers.",
+    "category": 4,
+    "imgUrl": "/images/sneakers/5.jpg"
+  },
+  {
+    "id": 205,
+    "title": "Blue Monet's Lily Pad",
+    "price": 110,
+    "style": "Monet",
+    "description": "Feel the warmth of sunlight on water with these yellow sneakers featuring lily pad motifs reminiscent of Monet's iconic water lily paintings.",
+    "category": 3,
+    "imgUrl": "/images/sneakers/10.jpg"
+  },
+  {
+    "id": 206,
+    "title": "Green Monet's Dreamland",
+    "price": 160,
+    "style": "Monet",
+    "description": "Step into a dreamland of surrealism with these green sneakers inspired by Dali's imaginative artworks.",
+    "category": 1,
+    "imgUrl": "/images/sneakers/11.jpg"
+  },
+  {
+    "id": 207,
+    "title": "Blue Van Gogh's Sunflower Glow",
+    "price": 90,
+    "style": "Van Gogh",
+    "description": "Radiate warmth and joy with these blue sneakers adorned with sunflower motifs inspired by Van Gogh's vibrant paintings.",
+    "category": 2,
+    "imgUrl": "/images/sneakers/7.jpg"
+  },
+  {
+    "id": 208,
+    "title": "Geometric Harmony",
+    "price": 70,
+    "style": "Geometric",
+    "description": "Capture the essence of ballet's grace with these orange sneakers featuring delicate motifs inspired by Degas' ballerinas.",
+    "category": 4,
+    "imgUrl": "/images/sneakers/3.jpg"
+  },
+  {
+    "id": 209,
+    "title": "Purple Monet's Water Lily Serenity",
+    "price": 130,
+    "style": "Monet",
+    "description": "Indulge in the serene beauty of Monet's water lilies with these purple sneakers adorned with delicate floral patterns.",
+    "category": 1,
+    "imgUrl": "/images/sneakers/12.jpg"
+  },
+  {
+    "id": 210,
+   "title": "Picasso's Cubist Canvas",
+"price": 180,
+"style": "Picasso",
+"description": "Embrace the avant-garde with these sneakers inspired by Picasso's Cubist masterpieces. Bold lines and vibrant colors bring an artistic edge to your every step.",
+    "category": 3,
+    "imgUrl": "/images/sneakers/13.jpg"
+  },
+  {
+    "id": 211,
+    "title": "Brown Van Gogh's Night Café",
+    "price": 95,
+    "style": "Van Gogh",
+    "description": "Experience the vibrant nightlife of Van Gogh's 'Night Café' with these brown sneakers inspired by the artist's dynamic brushstrokes.",
+    "category": 2,
+    "imgUrl": "/images/sneakers/8.jpg"
+  },
+  {
+    "id": 212,
+    "title": "Picasso's Abstract Expression",
+"price": 200,
+"style": "Picasso",
+"description": "Channel the spirit of abstract expressionism with these sneakers inspired by Picasso's dynamic artworks. Every step is a brushstroke of bold creativity.",
+    "category": 3,
+    "imgUrl": "/images/sneakers/16.jpg"
+  },
+  {
+    "id": 213,
+    "title": "Maroon Monet's Garden Harmony",
+    "price": 115,
+    "style": "Monet",
+    "description": "Immerse yourself in the harmonious beauty of Monet's garden with these maroon sneakers adorned with delicate floral patterns.",
+    "category": 1,
+    "imgUrl": "/images/sneakers/12.jpg"
+  },
+  {
+    "id": 214,
+    "title": "Abstract Geometry",
+"price": 110,
+"style": "Geometric",
+"description": "Fuse artistry and modernity with these sneakers featuring an abstract geometric design. Bold shapes and colors elevate your street style.",
+    "category": 4,
+    "imgUrl": "/images/sneakers/3.jpg"
+  },
+  {
+    "id": 215,
+    "title": "Teal Van Gogh's Starry Nightfall",
+    "price": 105,
+    "style": "Van Gogh",
+    "description": "Embrace the enchanting beauty of Van Gogh's 'Starry Night' with these teal sneakers capturing the essence of the swirling night sky.",
+    "category": 2,
+    "imgUrl": "/images/sneakers/30.jpg"
+  },
+  {
+    "id": 216,
+    "title": "Picasso's Colorful Chaos",
+"price": 190,
+"style": "Picasso",
+"description": "Experience the vibrant energy of Picasso's art with these sneakers adorned in colorful chaos. Each step is a celebration of artistic freedom.",
+    "category": 3,
+    "imgUrl": "/images/sneakers/19.jpg"
+  },
+  {
+    "id": 217,
+    "title": "Geometric Fusion",
+"price": 120,
+"style": "Geometric",
+"description": "Merge art and geometry seamlessly with these sneakers featuring a fusion of geometric shapes. Stand out with contemporary flair.",
+    "category": 4,
+    "imgUrl": "/images/sneakers/20.jpg"
+  },
+  {
+    "id": 218,
+    "title": "Silver Picasso Cosmic Journey",
+    "price": 165,
+    "style": "Picasso",
+    "description": "Embark on a cosmic journey of surrealism with these silver sneakers featuring mind-bending designs inspired by Picasso's imaginative artworks.",
+    "category": 3,
+    "imgUrl": "/images/sneakers/18.jpg"
+  },
+  {
+    "id": 219,
+    "title": "Gold Picasso's Wheat Field Brilliance",
+    "price": 85,
+    "style": "Picasso",
+    "description": "Illuminate your stride with the brilliance of Picasso's wheat fields with these gold sneakers inspired by the artist's vibrant palette.",
+    "category": 3,
+    "imgUrl": "/images/sneakers/15.jpg"
+  }
+]
