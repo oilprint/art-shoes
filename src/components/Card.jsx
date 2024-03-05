@@ -74,18 +74,10 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
               ) : (
                 <Button label="Buy now" onClick={onClickBuyNow} />
               )}
-
-              {/* // <Button label="Buy now" onClick={onClickBuyNow} isAdded={isAdded} /> */}
             </div>
           </div>
         </>
       )}
-      <Btn
-        Icon={Favorite}
-        isFavorite={isFavorited(id)}
-        onClick={onClickFavorite}
-        className="absolute top-3 right-3"
-      />
     </article>
   );
 };

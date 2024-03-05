@@ -38,7 +38,7 @@ const Header = () => {
             value={searchValue}
             type="text"
             placeholder="Search..."
-            className="text-primary h-10 pl-9 pt-3 pb-1 xs:max-w-[250px] max-w-[150px] w-full rounded-[40px] border border-primary border-solid bg-light placeholder:text-grey placeholder:font-lucky placeholder:leading-[1] placeholder:tracking-wider focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent"
+            className="text-primary h-10 pl-9 pt-3 pb-2 xs:max-w-[250px] max-w-[150px] w-full rounded-[40px] border border-primary border-solid bg-light placeholder:text-grey placeholder:font-lucky placeholder:leading-[1] placeholder:tracking-wider focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent"
           />
         </div>
 

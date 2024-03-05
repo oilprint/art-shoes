@@ -1,7 +1,6 @@
 const Favorite = () => {
   return (
     <svg
-      className="w-full h-full"
       width="24"
       height="24"
       viewBox="0 0 25 25"
