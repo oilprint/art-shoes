@@ -47,6 +47,10 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
                 height="320"
               />
             </div>
+            <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+              <Favorite />
+            </div>
+
             <motion.div
               onClick={onClickFavorite}
               className="absolute top-3 right-3"

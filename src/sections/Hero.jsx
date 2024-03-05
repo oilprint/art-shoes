@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { shoes } from '../constants';
 import { bigShoe1, bigShoe2 } from '../assets/images';
+import { Favorite } from '../assets/icons';
 
 const textVariants = {
   initial: {
@@ -81,6 +82,21 @@ const Hero = () => {
             </li>
           ))}
         </ul>
+      </div>
+
+      <motion.div
+        whileHover={{
+          scale: 1.2,
+          color: '#BC0001',
+          transition: { easy: 'easyInOut' },
+        }}>
+        <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+          <Favorite />
+        </div>
+      </motion.div>
+
+      <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+        <Favorite />
       </div>
     </section>
   );

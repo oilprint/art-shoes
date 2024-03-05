@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ItemsContext } from '../contexts/items';
 import { Card, Info } from '../components';
-import { emptyList } from '../assets/icons';
+import { emptyList, Favorite } from '../assets/icons';
 
 const FavoritePage = () => {
   const { favoritedItems } = useContext(ItemsContext);
@@ -20,6 +20,11 @@ const FavoritePage = () => {
           </span>
           favorite
         </h1>
+
+        <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+          <Favorite />
+        </div>
+
         {favoritedItems.length > 0 ? (
           <ul className="grid md:grid-cols-4 ss:grid-cols-3 grid-cols-2 gap-4 gap-y-8 w-full">
             {favoritedItems
