@@ -64,7 +64,7 @@ const Footer = () => {
           </li>
         </ul>
         <a
-          className=" inline-block mx-auto text-primary/80  hover:text-accent transition ease-in-out duration-300 focus:outline focus:outline-1 focus:outline-offset-2 focus:outline-accent rounded"
+          className=" inline-block mx-auto text-primary/50  hover:text-accent transition ease-in-out duration-300 focus:outline focus:outline-1 focus:outline-offset-2 focus:outline-accent rounded"
           href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kozlova.ux@gmail.com"
           target="_blank">
           created by kozlova.ux

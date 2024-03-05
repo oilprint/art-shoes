@@ -47,31 +47,23 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
                 height="320"
               />
             </div>
-            <motion.div
-              onClick={onClickFavorite}
-              className="absolute top-3 right-3"
-              whileHover={{
-                scale: 1.2,
-                transition: { easy: 'cubic-bezier(.11,-0.51,.71,.42)' },
-              }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}>
-              <button className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
-                <Favorite />
-              </button>
-              {/* {isFavorited(id) ? (
-                <Btn Icon={Favorite} isFavorite={isFavorited(id)} />
-              ) : (
-                <Btn Icon={Favorite} />
-              )} */}
-            </motion.div>
+            {isFavorited(id) ? (
+              <Btn
+                Icon={Favorite}
+                isFavorite={isFavorited(id)}
+                onClick={onClickFavorite}
+                className="absolute top-3 right-3"
+              />
+            ) : (
+              <Btn onClick={onClickFavorite} Icon={Favorite} className="absolute top-3 right-3" />
+            )}
           </div>
 
           <div className="flex flex-col justify-between grow px-2">
             <h3 className="xs:text-lg text-base font-[700] leading-[1] text-primary mb-2 ">
               {title}
             </h3>
-            <div className="flex justify-between flex-wrap items-center">
+            <div className="flex justify-between flex-wrap items-center gap-1">
               <div className=" xs:mr-2 mr-6 mb-1 font-lucky  text-accent text-[32px] ">
                 <span>$</span>
                 <span>{price}</span>

@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className={`z-50 inset-x-0 rounded-[20px] bg-light container ${scroll ? 'sticky' : ''}`}>
+      className={`z-50 inset-x-0 rounded-[20px] pb-2 bg-light container ${scroll ? 'sticky' : ''}`}>
       <nav className="flex flex-wrap justify-between items-center gap-2 sm:py-3 py-1 rounded-[40px] border-2 border-dark  md:max-w-[1200px] max-w-[515px] w-full mx-auto ">
         <div className="relative text-primary md:-order-1 order-1 hover:text-accent  ">
           <SearchIcon className="absolute top-2 left-2" />
