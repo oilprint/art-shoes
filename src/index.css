@@ -119,14 +119,14 @@ body {
   position: relative;
 }
 
-.polisyList:not(:last-child)::after {
+.polisyList:not(:first-child)::after {
   position: absolute;
   content: '';
   width: 2px;
   height: 16px;
   background-color: var(--primary);
   top: 4px;
-  right: -15px;
+  left: -15px;
 }
 
 @keyframes fadeInDown {
