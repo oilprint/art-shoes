@@ -7,14 +7,14 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom';
 import Layout from './Layout';
-import { Home, Favorite, ErrorPage, Policy } from './pages';
+import { Home, FavoritePage, ErrorPage, Policy } from './pages';
 import './index.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="favorite" element={<Favorite />} />
+      <Route path="favorite" element={<FavoritePage />} />
       <Route path="policy" element={<Policy />} />
       <Route path="*" element={<ErrorPage />} />
     </Route>,

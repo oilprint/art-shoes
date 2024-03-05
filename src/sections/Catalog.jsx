@@ -73,25 +73,6 @@ const Catalog = () => {
           {renderItems()}
         </ul>
         <Pagination onChangePage={(number) => setCurrentPage(number)} />
-
-        <motion.div
-          whileHover={{
-            scale: 1.2,
-            color: '#BC0001',
-            transition: { easy: 'easyInOut' },
-          }}>
-          <button className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
-            <Favorite />
-          </button>
-        </motion.div>
-
-        <Btn Icon={btnIcon} isFavorite={2} onClick={console.log('djdjdjd')} className="" />
-
-        <button
-          onClick={console.log('djdjdjd')}
-          className=" cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
-          <img src={btnIcon} alt="" />
-        </button>
       </div>
     </section>
   );

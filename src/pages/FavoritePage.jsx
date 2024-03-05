@@ -4,7 +4,7 @@ import { Card, Info, Btn } from '../components';
 import { emptyList, Favorite } from '../assets/icons';
 import { motion } from 'framer-motion';
 
-const Favorite = () => {
+const FavoritePage = () => {
   const { favoritedItems } = useContext(ItemsContext);
   const { searchValue } = useContext(ItemsContext);
   const { itemsAction } = useContext(ItemsContext);
@@ -14,6 +14,7 @@ const Favorite = () => {
 
   return (
     <section className="py-20">
+      <div className="w-[1000px] h-[100px] bg-primary"></div>
       <motion.div
         whileHover={{
           scale: 1.2,
@@ -64,4 +65,4 @@ const Favorite = () => {
   );
 };
 
-export default Favorite;
+export default FavoritePage;
