@@ -36,8 +36,11 @@ const Cart = () => {
                     <div className="flex flex-col justify-between py-2 w-full">
                       <div className="flex gap-5 justify-between ">
                         <p>{item.title}</p>
-
-                        <Btn Icon={Remove} onClick={() => itemsAction.onRemoveItem(item.id)} />
+                        <button
+                          onClick={() => itemsAction.onRemoveItem(item.id)}
+                          className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+                          <Remove />
+                        </button>
                       </div>
                       <div className="text-accent text-3xl">
                         <span>$</span>
@@ -73,7 +76,11 @@ const Cart = () => {
           )}
         </div>
 
-        <CloseBtn onClick={itemsAction.onClickCloseCart} className="absolute top-4 right-4" />
+        <button
+          onClick={itemsAction.onClickCloseCart}
+          className="absolute top-4 right-4 cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+          <Remove />
+        </button>
       </div>
     </div>
   );
