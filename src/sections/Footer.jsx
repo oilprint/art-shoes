@@ -19,31 +19,21 @@ const Footer = () => {
   return (
     <footer className="container pb-5">
       <div className="bg-dark rounded-[40px] pt-[60px] pb-6 mx-0 text-center">
-        <motion.div
+        <motion.a
+          onClick={() => animateScroll.scrollToTop(options)}
           whileHover={{
             scale: 1.2,
-            color: '#BC0001',
-            transition: { easy: 'easyInOut' },
-          }}>
-          <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
-            <Favorite />
-          </div>
-        </motion.div>
-        <a
-          onClick={() => animateScroll.scrollToTop(options)}
+            transition: { easy: 'easeInOut', duration: 0.4 },
+          }}
           className="flex justify-center items-center mb-8 w-[125px] mx-auto focus:outline focus:outline-1 focus:outline-offset-2 focus:outline-accent rounded-lg">
-          <motion.img
+          <img
             className="mx-auto h-auto"
-            whileHover={{
-              scale: 1.2,
-              transition: { easy: 'easeInOut', duration: 0.4 },
-            }}
             src={logoSmall}
             alt="Logo Art Walk Shoes"
             width={125}
             height={78}
           />
-        </a>
+        </motion.a>
         <ul className="flex  flex-wrap justify-center gap-x-8 gap-y-3 font-lucky text-accent text-2xl sm:mb-11 mb-7">
           {socialList.map((item) => (
             <li key={item.id}>

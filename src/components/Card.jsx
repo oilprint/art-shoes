@@ -47,16 +47,19 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
                 height="320"
               />
             </div>
-            {isFavorited(id) ? (
-              <Btn
-                Icon={Favorite}
-                isFavorite={isFavorited(id)}
-                onClick={onClickFavorite}
-                className="absolute top-3 right-3"
-              />
-            ) : (
-              <Btn onClick={onClickFavorite} Icon={Favorite} className="absolute top-3 right-3" />
-            )}
+            <motion.div
+              onClick={onClickFavorite}
+              className="absolute top-3 right-3"
+              whileHover={{
+                scale: 1.2,
+                transition: { easy: 'cubic-bezier(.11,-0.51,.71,.42)' },
+              }}>
+              {isFavorited(id) ? (
+                <Btn Icon={Favorite} isFavorite={isFavorited(id)} />
+              ) : (
+                <Btn Icon={Favorite} />
+              )}
+            </motion.div>
           </div>
 
           <div className="flex flex-col justify-between grow px-2">
@@ -64,7 +67,7 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
               {title}
             </h3>
             <div className="flex justify-between flex-wrap items-center gap-1">
-              <div className=" xs:mr-2 mr-6 mb-1 font-lucky leading-[0.8] text-accent text-[32px] ">
+              <div className=" xs:mr-2 mr-6 mb-1 font-lucky leading-[0.7]  text-accent text-[32px] ">
                 <span>$</span>
                 <span>{price}</span>
               </div>
@@ -74,6 +77,8 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
               ) : (
                 <Button label="Buy now" onClick={onClickBuyNow} />
               )}
+
+              {/* // <Button label="Buy now" onClick={onClickBuyNow} isAdded={isAdded} /> */}
             </div>
           </div>
         </>

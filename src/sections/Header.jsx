@@ -74,14 +74,12 @@ const Header = () => {
           <motion.button
             onClick={itemsAction.onClickOpenCart}
             type="button"
-            className={`relative cursor-pointer flex flex-1 flex-center items-center pt-3 pb-1 leading-[1] border-[2px] border-solid rounded-full border-primary text-primary h-10 w-auto px-3 pypx-2.5  ${
+            className={`relative cursor-pointer flex flex-1 flex-center items-center pt-3 pb-2 leading-[0.7] border-[2px] border-solid rounded-full border-primary text-primary h-10 w-auto px-3 pypx-2.5  ${
               cartItems.length > 0 ? 'bg-accent' : 'bg-light'
             } transition ease-in-out duration-300 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent`}
             whileHover={{
               scale: 1.2,
-            }}
-            onHoverStart={(e) => {}}
-            onHoverEnd={(e) => {}}>
+            }}>
             {cartItems.length > 0 ? (
               <div className="font-lucky text-dark text-xl ">
                 <span>{total}</span>
@@ -90,7 +88,6 @@ const Header = () => {
             ) : (
               ''
             )}
-
             <CartIcon />
           </motion.button>
         </div>

@@ -1,9 +1,7 @@
 import { useContext } from 'react';
 import { ItemsContext } from '../contexts/items';
-import { Card, Pagination, Category, Btn } from '../components';
+import { Card, Pagination, Category } from '../components';
 import { motion } from 'framer-motion';
-import { Favorite } from '../assets/icons';
-import btnIcon from '../assets/icons/btn.svg';
 
 const Catalog = () => {
   const { items, itemsAction, isLoading, setCurrentPage } = useContext(ItemsContext);
@@ -62,7 +60,7 @@ const Catalog = () => {
               delay: 0.2,
             },
           }}
-          className="block font-lucky ss:text-[70px] lg:text-[100px] xs:text-[50px] text-[40px] text-light text-center leading-[0.8] sm:mb-8 mb-5">
+          className="block font-lucky ss:text-[70px] lg:text-[100px] xs:text-[50px] text-[40px] text-light text-center leading-[0.8] sm:mb-8 mb-2">
           <span className="ss:text-[150px] lg:text-[200px] xs:text-[100px] text-[60px] uppercase text-light">
             ART
           </span>
