@@ -59,13 +59,13 @@ const Card = ({ title, imgUrl, price, onBuy, id, favorited, added, isLoading, on
                 transition: { easy: 'cubic-bezier(.11,-0.51,.71,.42)' },
               }}>
               {isFavorited(id) ? (
-                <button className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10  bg-accent hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+                <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10  bg-accent hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
                   <Favorite />
-                </button>
+                </div>
               ) : (
-                <button className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10  bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+                <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10  bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
                   <Favorite />
-                </button>
+                </div>
               )}
             </motion.div>
           </div>
