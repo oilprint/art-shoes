@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import { ItemsContext } from '../contexts/items';
 import { Card, Info, Btn } from '../components';
-import { emptyList } from '../assets/icons';
+import { emptyList, Favorite } from '../assets/icons';
+import { motion } from 'framer-motion';
 
 const Favorite = () => {
   const { favoritedItems } = useContext(ItemsContext);
@@ -12,13 +13,18 @@ const Favorite = () => {
   console.log(favoritedItems.length);
 
   return (
-    <section>
-      <Btn
-        Icon={Favorite}
-        isFavorite={2}
-        onClick={console.log('cjhbfhsbvsh')}
-        className="absolute top-3 right-3"
-      />
+    <section className="py-20">
+      <motion.div
+        whileHover={{
+          scale: 1.2,
+          color: '#BC0001',
+          transition: { easy: 'easyInOut' },
+        }}>
+        <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+          <Favorite />
+        </div>
+      </motion.div>
+
       {/* <div className="container py-10">
         <h1 className="font-lucky ss:text-[70px] lg:text-[100px] xs:text-[50px] text-[40px] text-primary text-center mb-5">
           <span className="ss:text-[100px] lg:text-[150px] xs:text-[70px] text-[40px] uppercase text-stroke text-light mr-2">
