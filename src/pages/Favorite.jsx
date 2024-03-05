@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ItemsContext } from '../contexts/items';
-import { Card, Info } from '../components';
+import { Card, Info, Btn } from '../components';
 import { emptyList } from '../assets/icons';
 
 const Favorite = () => {
@@ -13,7 +13,13 @@ const Favorite = () => {
 
   return (
     <section>
-      <div className="container py-10">
+      <Btn
+        Icon={Favorite}
+        isFavorite={2}
+        onClick={console.log('cjhbfhsbvsh')}
+        className="absolute top-3 right-3"
+      />
+      {/* <div className="container py-10">
         <h1 className="font-lucky ss:text-[70px] lg:text-[100px] xs:text-[50px] text-[40px] text-primary text-center mb-5">
           <span className="ss:text-[100px] lg:text-[150px] xs:text-[70px] text-[40px] uppercase text-stroke text-light mr-2">
             My
@@ -47,7 +53,7 @@ const Favorite = () => {
             onClick={() => itemsAction.onClickCloseCart()}
           />
         )}
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { logoSmall } from '../assets/icons';
+import { logoSmall, Favorite } from '../assets/icons';
 import { socialList } from '../constants';
 import { animateScroll } from 'react-scroll';
+import { Btn } from '../components';
 
 console.log(socialList);
 
@@ -18,6 +19,16 @@ const Footer = () => {
   return (
     <footer className="container pb-5">
       <div className="bg-dark rounded-[40px] pt-[60px] pb-6 mx-0 text-center">
+        <motion.div
+          whileHover={{
+            scale: 1.2,
+            color: '#BC0001',
+            transition: { easy: 'easyInOut' },
+          }}>
+          <div className="cursor-pointer shrink-0 flex justify-center items-center text-primary border-2 border-solid border-primary rounded-full w-10 h-10 bg-light hover:text-[#BC0001] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent">
+            <Favorite />
+          </div>
+        </motion.div>
         <a
           onClick={() => animateScroll.scrollToTop(options)}
           className="flex justify-center items-center mb-8 w-[125px] mx-auto focus:outline focus:outline-1 focus:outline-offset-2 focus:outline-accent rounded-lg">

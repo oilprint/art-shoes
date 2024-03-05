@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
 import { ItemsContext } from '../contexts/items';
 import { logo, CartIcon, Favorite, SearchIcon, CloseBtnIcon } from '../assets/icons';
-import { Cart } from '../components';
+import { Cart, Btn } from '../components';
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -25,7 +25,6 @@ const Header = () => {
       <nav className="flex flex-wrap justify-between items-center gap-2 sm:py-3 py-1 rounded-[40px] border-2 border-dark  md:max-w-[1200px] max-w-[515px] w-full mx-auto ">
         <div className="relative text-primary md:-order-1 order-1 hover:text-accent  ">
           <SearchIcon className="absolute top-2 left-2" />
-
           {searchValue && (
             <CloseBtnIcon
               onClick={itemsAction.onSearchClear}
