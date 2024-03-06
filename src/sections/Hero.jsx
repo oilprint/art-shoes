@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { shoes } from '../constants';
 import { bigShoe1, bigShoe2 } from '../assets/images';
-import { Favorite } from '../assets/icons';
 
 const textVariants = {
   initial: {
@@ -23,10 +22,10 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
-    <section className="container" id="hero">
-      <div className="relative pt-6 ss:pb-[60px] pb-8">
+    <section className="container pt-6 ss:pb-[60px] pb-8" id="hero">
+      <div className="relative bg-[#F3F1F1] rounded-[40px]  ">
         <motion.div
-          className="absolute lg:top-[110px] top-[8%] sm:left-14 left-[5%] right-[5%]"
+          className="relative z-10 md:py-20 sm:py-16 xs:py-14 py-10 sm:px-14 px-6 h-[80vh]"
           variants={textVariants}
           initial="initial"
           animate="animate">
@@ -36,7 +35,7 @@ const Hero = () => {
             New impressionism collection
           </motion.p>
           <motion.p
-            className={`font-lucky ss:text-[88px] text-[60px]  leading-[1] mb-5 ${
+            className={`font-lucky md:text-[88px] ss:text-[72px] xs:text-[60px] text-[50px] leading-[1] sm:mb-5 mb-3 ${
               bigShoeImg === bigShoe2 ? 'text-accent' : 'text-[#C54425]'
             }
             `}
@@ -44,7 +43,7 @@ const Hero = () => {
             Artistry in Motion:
           </motion.p>
           <motion.h1
-            className="sm:text-[44px] xs:text-4xl text-xl leading-[1.2] font-medium text-primary uppercase max-w-[550px] w-full mb-8"
+            className="sm:text-[44px] xs:text-4xl text-3xl leading-[1.2] font-medium text-primary uppercase max-w-[550px] w-full sm:mb-8 mb-4"
             variants={textVariants}>
             Discover Our Inspired Sneaker Collection
           </motion.h1>
@@ -60,12 +59,12 @@ const Hero = () => {
         <img
           src={bigShoeImg}
           alt="new collection"
-          width={1200}
-          height={720}
-          className="object-cover rounded-[40px]"
+          width={850}
+          height={500}
+          className="absolute z-1 bottom-0 right-0 max-w-[850px] w-full object-contain"
         />
 
-        <ul className="absolute  flex items-center gap-3 sm:bottom-[100px]  bottom-[8%] left-[5%] right-[5%]">
+        <ul className="absolute z-20 flex items-center gap-3 sm:bottom-[5%]  bottom-[3%] left-[5%] right-[5%]">
           {shoes.map((item, index) => (
             <li key={index}>
               <motion.img
