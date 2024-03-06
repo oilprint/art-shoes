@@ -30,7 +30,7 @@ const Advantages = () => {
                   {item.number}
                 </span>
                 <div>
-                  <h3 className="sm:text-3xl text-2xl text-primary font-bold sm:mb-3 mb-1">
+                  <h3 className=" sm:text-3xl text-2xl text-primary font-bold sm:mb-3 mb-1 ">
                     {item.title}
                   </h3>
                   <p className="text-grey text-lg">{item.text}</p>

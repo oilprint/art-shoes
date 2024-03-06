@@ -42,6 +42,7 @@ const FavoritePage = () => {
         ) : (
           <Info
             href="/"
+            label="Go Home"
             imageUrl={emptyList}
             title="Your favorites list is empty"
             description="No items have been added to favorites"

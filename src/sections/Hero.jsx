@@ -25,7 +25,7 @@ const Hero = () => {
     <section className="container pt-6 ss:pb-[60px] pb-8" id="hero">
       <div className="relative bg-[#F3F1F1] rounded-[40px]  ">
         <motion.div
-          className="relative z-10 md:py-20 sm:py-16 xs:py-14 py-10 sm:px-14 px-6 h-[80vh]"
+          className="relative z-10 md:py-20 sm:py-16 xs:py-14 py-10 sm:px-14 px-6 h-[80vh] min-h-[700px]"
           variants={textVariants}
           initial="initial"
           animate="animate">

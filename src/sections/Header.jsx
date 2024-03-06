@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
 import { ItemsContext } from '../contexts/items';
 import { logo, CartIcon, Favorite, SearchIcon, CloseBtnIcon } from '../assets/icons';
-import { Cart, Btn } from '../components';
+import { Cart } from '../components';
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -43,17 +43,13 @@ const Header = () => {
 
         <Link
           to="/"
-          className="focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent rounded-lg">
+          className=" block w-[480px] hover focus:outline focus:outline-2 focus:outline-accent rounded-xl focus:outline-offset-2 transition ease-in-out duration-300">
           <motion.img
-            className="mx-auto h-auto focus:outline focus:outline-2 focus:outline-offset-2 "
+            className="mx-auto h-auto  "
             src={logo}
             alt="logo ArtWalk Shoe Co."
             width={480}
             height={84}
-            whileHover={{
-              scale: 1.2,
-              transition: { easy: 'easeInOut', duration: 0.4 },
-            }}
           />
         </Link>
 

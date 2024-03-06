@@ -90,6 +90,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.hover:hover {
+  transform: scale(1.2);
+}
+
 .text-stroke {
   -webkit-text-stroke: 2px var(--primary);
   text-stroke: 2px var(--primary);

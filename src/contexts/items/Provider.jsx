@@ -54,7 +54,7 @@ export const ItemsProvider = ({ children }) => {
         setAllItems(allItemsResponse.data);
       } catch (error) {
         setItems([]);
-        // alert('Sorry, we do not have data for your request');
+        // alert('Sorry, we do not have sneakers for your request');
         console.error();
       }
     }
