@@ -4,7 +4,7 @@
 
 # [go to website](https://art-shoes-three.vercel.app/)
 
- <h2>🎨🖥️ ArtSneakers Online Store </h2>
+ <h2>🎨🖥️ ArtWalk Shoes Online Store </h2>
 
 <h3> 🖥️ About the Project: </h3> 
 ArtSneakers is a web application for an online store specializing in the sale of sneakers with unique designs inspired by famous artists' works. In this project, we blend style and comfort, offering customers the opportunity to wear true works of art on their feet.
